@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Duchess Logic Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔝 NAVBAR -->
+<div class="navbar">
+  <div class="nav-left">The Duchess of Hackers</div>
+  <button id="dark-toggle" class="nav-right">🌙 Dark Mode</button>
+</div>
+
+<!-- START SCREEN -->
+<div id="start-screen" class="wrapper">
+  <div class="card">
+    <h2>Welcome To Duchess Logic Quiz</h2>
+
+    <input type="text" id="username" placeholder="Nickname or Full name">
+
+    <select id="category">
+      <option value="">Select Course</option>
+      <option value="python">🐍 Python Programming</option>
+      <option value="coding">💻 General Coding</option>
+    </select>
+
+    <input type="number" id="question-count" placeholder="Number of questions (default 20)">
+    <input type="number" id="time-input" placeholder="Duration in seconds (default 120)">
+
+    <button id="start-btn">Start Quiz</button>
+  </div>
+</div>
+
+<!-- QUIZ SCREEN -->
+<div id="quiz-screen" style="display:none;">
+
+  <div class="top-bar">
+    <div id="user-display" class="user"></div>
+    <div id="timer" class="timer-box">⏱ 0s</div>
+  </div>
+
+  <div class="quiz-card">
+
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+
+    <h2 id="question"></h2>
+
+    <div id="answers"></div>
+
+    <button id="next-btn">Next</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>© 2026 Made with ❤️ by The Duchess of Hackers</footer>
+
+<!-- BOTTOM NAV (MOTIVATION NAV BAR) -->
+<div class="bottom-nav">
+  <p id="quote-box">“Success is built one question at a time.”</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
