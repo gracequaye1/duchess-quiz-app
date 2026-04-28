@@ -319,3 +319,190 @@ body.dark .motivation p {
     transform: translateX(0);
   }
 }
+
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+
+  body {
+    padding: 70px 12px 70px;
+    gap: 12px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    height: 55px;
+    padding: 0 12px;
+  }
+
+  .nav-left {
+    font-size: 14px;
+  }
+
+  .nav-right {
+    height: 28px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  /* START CARD */
+  .wrapper {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  /* INPUTS */
+  input, select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* BUTTON */
+  button {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  /* QUIZ SCREEN */
+  #quiz-screen {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  /* TOP BAR */
+  .top-bar {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .user,
+  .timer-box {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  /* QUIZ CARD */
+  .quiz-card {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  /* QUESTION TEXT */
+  #question {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  /* ANSWERS */
+  #answers button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* NEXT BUTTON */
+  #next-btn {
+    margin-top: 10px;
+  }
+
+  /* PROGRESS BAR */
+  .progress-bar {
+    height: 6px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  /* BOTTOM NAV */
+  .bottom-nav {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* 📱 NEXT LEVEL MOBILE UI */
+@media (max-width: 600px) {
+
+  body {
+    padding: 65px 10px 65px;
+    background: linear-gradient(180deg, #ffe6f0, #fff);
+  }
+
+  /* FULL WIDTH APP FEEL */
+  .wrapper,
+  #quiz-screen {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* CARD → APP PANEL STYLE */
+  .card,
+  .quiz-card {
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  }
+
+  /* QUESTION */
+  #question {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  /* ANSWERS → TOUCH FRIENDLY */
+  #answers button {
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+  }
+
+  #answers button:active {
+    transform: scale(0.96);
+  }
+
+  /* NEXT BUTTON → FLOAT STYLE */
+  #next-btn {
+    margin-top: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  /* TOP BAR STACK */
+  .top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* PROGRESS BAR → THICKER */
+  .progress-bar {
+    height: 10px;
+  }
+
+  /* NAVBAR SMALLER */
+  .navbar {
+    height: 55px;
+  }
+
+  /* DARK BUTTON SMALL */
+  .nav-right {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  /* BOTTOM NAV LIKE APP BAR */
+  .bottom-nav {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
