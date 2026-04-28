@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-/* BODY LAYOUT (CENTER + NAV SPACE) */
+/* BODY LAYOUT */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #ffe6f0, #ffd6eb);
@@ -16,10 +16,12 @@ body {
   flex-direction: column;
   align-items: center;
 
-  gap: 20px;
+  justify-content: flex-start; /* keeps flow natural */
 
-  /* space for top navbar + bottom nav */
-  padding: 80px 20px 80px;
+  gap: 16px;
+
+  /* space for navbar + bottom quote bar */
+  padding: 70px 16px 20px;
 }
 
 /* 🔝 TOP NAVBAR */
@@ -49,19 +51,18 @@ body {
   color: white;
 }
 
-/* 🌙 DARK MODE BUTTON (UPDATED → PILL STYLE) */
-/* 🌙 DARK MODE BUTTON (FIXED SIZE, NO OVERLAP) */
+/* 🌙 DARK MODE BUTTON (PILL STYLE FIXED) */
 .nav-right {
   width: auto;
   height: 32px;
 
-  padding: 4px 10px;   /* smaller padding = no crowding */
+  padding: 4px 12px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 16px;  /* smaller pill */
+  border-radius: 16px;
   border: none;
 
   cursor: pointer;
@@ -71,7 +72,7 @@ body {
 
   font-size: 13px;
 
-  white-space: nowrap; /* prevents stretching */
+  white-space: nowrap;
 
   transition: 0.3s ease;
 }
@@ -81,23 +82,29 @@ body {
   background: rgba(255,255,255,0.4);
 }
 
-.nav-right:hover {
-  transform: scale(1.05);
-  background: rgba(255,255,255,0.4);
-}
-
-/* START WRAPPER */
+/* 📦 CENTER START SCREEN (THIS FIXES YOUR MAIN ISSUE) */
 .wrapper {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
+
+  /* PERFECT CENTERING */
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
 }
 
-/* CARD */
+/* CARD (LOGIN / START SCREEN) */
 .card {
+  width: 100%;
   background: white;
+
   padding: 25px;
+
   border-radius: 15px;
+
   text-align: center;
+
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -105,7 +112,9 @@ body {
 input, select {
   width: 100%;
   padding: 12px;
+
   margin: 10px 0;
+
   border-radius: 8px;
   border: 1px solid #ccc;
 }
@@ -114,10 +123,13 @@ input, select {
 button {
   width: 100%;
   padding: 12px;
+
   border: none;
   border-radius: 10px;
+
   background: #ff4d8d;
   color: white;
+
   cursor: pointer;
   transition: 0.3s;
 }
@@ -135,6 +147,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-top: 20px;
 }
 
 /* TOP BAR */
@@ -142,6 +156,7 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 15px;
 }
 
@@ -149,8 +164,11 @@ button:hover {
 .user {
   background: white;
   padding: 8px 12px;
+
   border-radius: 20px;
+
   font-weight: bold;
+
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -158,18 +176,25 @@ button:hover {
 .timer-box {
   background: #ff4d6d;
   color: white;
+
   padding: 8px 12px;
+
   border-radius: 20px;
+
   font-weight: bold;
 }
 
 /* QUIZ CARD */
 .quiz-card {
   background: white;
+
   width: 100%;
   padding: 25px;
+
   border-radius: 15px;
+
   text-align: center;
+
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -177,16 +202,22 @@ button:hover {
 .progress-bar {
   width: 100%;
   height: 8px;
+
   background: #eee;
+
   border-radius: 10px;
+
   margin-bottom: 15px;
+
   overflow: hidden;
 }
 
 #progress-fill {
   height: 100%;
   width: 0%;
+
   background: linear-gradient(90deg, #ff4d8d, #ff80b3);
+
   transition: 0.3s;
 }
 
@@ -197,17 +228,19 @@ button:hover {
   color: black;
 }
 
-/* FOOTER */
+/* FOOTER (optional) */
 footer {
   margin-top: 10px;
   text-align: center;
+
   font-size: 14px;
   color: #555;
 }
 
-/* 🌸 FULL WIDTH MOTIVATION BOTTOM NAV */
+/* 🌸 BOTTOM MOTIVATION BAR */
 .bottom-nav {
   width: 100%;
+
   position: fixed;
   bottom: 0;
   left: 0;
@@ -233,7 +266,9 @@ footer {
 .motivation {
   width: 100%;
   max-width: 500px;
+
   text-align: center;
+
   padding: 10px;
 }
 
@@ -265,6 +300,7 @@ body.dark .motivation p {
   color: #fff;
 }
 
+/* ANIMATION */
 #quote-box {
   transition: opacity 0.5s ease;
 }
