@@ -8,7 +8,7 @@ Designed to make learning programming concepts engaging through real-time feedba
 
 ##  Live Demo
 
-👉 https://yourusername.github.io/duchess-quiz/
+👉 [https://gracequaye1.github.io/duchess-quiz/](https://gracequaye1.github.io/duchess-quiz-app/)
 
 ---
 
